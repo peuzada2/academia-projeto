@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="script.js">
     <title>Document</title>
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">logo</div>
-            <menu class="navegacao">
+            <menu class="navegacao active">
                 <li class="nav-item"><a href="#Inicio">Inicio</a></li>
                 <li class="nav-item"><a href="#sobrenos">Sobre Nós</a></li>
                 <li class="nav-item"><a href="#programas">Programas</a></li>
@@ -21,21 +22,16 @@
                 <li class="nav-item"><a href="">Orçamento</a></li>
                 <li class="nav-item5"><a href="">Contato</a></li>
             </menu>
-            <span class="material-symbols-outlined
-                ">
-                menu
-            </span>
-                <div class="dropdown">
-                    <menu class="navegacao">
-                        <li class="nav-item"><a href="#Inicio">Inicio</a></li>
-                        <li class="nav-item"><a href="#sobrenos">Sobre Nós</a></li>
-                        <li class="nav-item"><a href="#programas">Programas</a></li>
-                        <li class="nav-item"><a href="">Treinos</a></li>
-                        <li class="nav-item"><a href="">Orçamento</a></li>
-                        <li class="nav-item5"><a href="">Contato</a></li>
+
+                <div class="hamburguer active">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
                 </div>
-        </nav>
-    </header>
+
+            </div>
+            </nav>
+        </header>
 
     <section id="Inicio">
         <div class="apresentacao">
@@ -92,13 +88,23 @@
     </section>
 
     <section id="treinos">
-        <div>
-            <picture></picture>
+        <h1 class="titulotreinos">SESSÃO DE TREINAMENTOS</h1>
+        <div class="cardsex">
+            <div class="cardex"><h1>BRAÇOS</h1>
+            <picture class="imgex1"></picture>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eos quis modi voluptas enim, mollitia quibusdam saepe reiciendis cupiditate, porro commodi animi rerum laborum repudiandae. Harum molestias neque porro illum?</p>
+            <a href="" class="linktreinos">TREINO AQUI</a>
         </div>
-        <div>
-            <h1>SESSÃO DE TREINAMENTOS</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et quidem rem provident esse quisquam, ipsum qui dolore temporibus odit saepe architecto at inventore vel, maiores quas blanditiis asperiores quasi molestias!</p>
+            <div class="cardex"><h1>PERNAS</h1>
+                <picture class="imgex2"></picture>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eos quis modi voluptas enim, mollitia quibusdam saepe reiciendis cupiditate, porro commodi animi rerum laborum repudiandae. Harum molestias neque porro illum?</p>
+                <a href="" class="linktreinos">TREINO AQUI</a></div>
+            <div class="cardex3"><h1>COSTAS</h1>
+                <picture class="imgex3"></picture>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eos quis modi voluptas enim, mollitia quibusdam saepe reiciendis cupiditate, porro commodi animi rerum laborum repudiandae. Harum molestias neque porro illum?</p>
+                <a href="" class="linktreinos">TREINO AQUI</a></div>
         </div>
     </section>
 </body>
+<script src="script.js"></script>
 </html>
