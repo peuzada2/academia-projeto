@@ -320,6 +320,7 @@ nav {
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    margin-bottom: 50px;
 }
 
 
@@ -411,7 +412,83 @@ nav {
     background-color: #161616;
 }
 
+/*FOOTER*/
 
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #161616;
+}
+
+.footercards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 100px 0;
+}
+
+.cardft2 {
+    border-right: #eeeeee 1px solid;
+    border-left: white 1px solid;
+}
+
+.cardft, .cardft2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 30%;
+}
+
+.cardft > p {
+    font-size: 1.3em
+}
+
+.cardft2 > p {
+    font-size: 1.3em;
+}
+
+.ctt {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    background-image: url(imagens/telefone.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    background-size: cover;
+}
+
+.loc {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    background-image: url(imagens/localizacao.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+.hr {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    background-image: url(imagens/rotacao-no-sentido-horario.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    background-size: cover;
+}
+
+.linkdireitos {
+    color: #11a0ff;
+    border-bottom: 1px solid #11a0ff;
+}
 
 @media only screen and (max-width:860px) and (min-width: 100px) {
 
