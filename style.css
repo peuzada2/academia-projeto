@@ -510,6 +510,8 @@ footer {
         top: 0;
         right: -100%;
         height: 100vh;
+        overflow-x: hidden;
+        overflow-y: hidden;
         margin: 0;
         background-color: #252525;
         width: 100%;
@@ -531,12 +533,12 @@ footer {
     .textoapresentativo {
         width: 100%;
     }
-
+    
     .textoapresentativo > h1 {
         font-size: 3.3em;
         line-height: 45px;
     }
-
+    
     .textoapresentativo > p {
         font-size: .7em;
         width: 90%;
@@ -550,6 +552,7 @@ footer {
     }
 
     .navegacao.active {
+        display: flex;
         right: 0;
     }
 
@@ -613,6 +616,26 @@ footer {
         text-align: center;
     }
 
+    /*FOOTER*/
+
+    .footercards {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .cardft2{
+        border-right: none;
+        border-left: none;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .cardft {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 }
 
 @media only screen and (max-width:390px) and (min-width: 100px) {
