@@ -232,11 +232,13 @@ nav {
     transition: all .2s ease-out;
 }
 
+
 .card:hover {
     z-index: 0;
     transform: scale(1.02);
     -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.623));
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.623));
+    box-shadow: 5px 10px 20px;
 }
 
 .card:hover h2 {
@@ -301,11 +303,16 @@ nav {
 }
 
 .cards {
+    overflow: hidden;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: row;
+}
+
+#prevBtn, #nextBtn {
+    display: none;
 }
 
 /*EXERCICIOS*/
@@ -520,7 +527,36 @@ footer {
     .nav-item, .nav-item5 {
         font-size: 2em;
         padding: 10px 0px;
+        text-transform: uppercase;
     }
+
+    .nav-item5:hover:after, .nav-item:hover:after {
+        display: none;
+    }
+
+    .nav-item5:after, .nav-item:after {
+        display: none;
+    }
+
+    .linknav {
+        width: 10%
+    }
+
+    .linknav:after {
+        display: flex;
+        content: "";
+        background-color: #11a0ff;
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: all .3s ease-in-out;
+    }
+
+    .linknav:hover:after {
+       
+    }
+    
 
     .nav-item:hover {
         color: #11a0ff;
@@ -589,7 +625,6 @@ footer {
 
     /*SERVIÇOS*/
 
-
     .cards {
         flex-direction: column;
     }
@@ -597,11 +632,18 @@ footer {
     .card {
         width: 100%;
         margin-bottom: 20px;
-    }
+        transform: translateX(-300px);
+}
 
-
+.card.active {
+    transform: translateX(0);
+  }
     .conteudoprogramas {
         text-align: center;
+    }
+
+    .prevBtn, .nextBtn {
+        display: flex;
     }
 
     /*FOOTER*/
