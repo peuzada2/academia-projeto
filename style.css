@@ -209,7 +209,6 @@ nav {
 }
 
 .conteudoprogramas {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     height: 100%;
@@ -228,13 +227,13 @@ nav {
 
 .card {
     width: 23%;
+    height: 100%;
+    z-index: 2;
     cursor: pointer;
     transition: all .2s ease-out;
 }
 
-
 .card:hover {
-    z-index: 0;
     transform: scale(1.02);
     -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.623));
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.623));
@@ -303,6 +302,7 @@ nav {
 }
 
 .cards {
+    z-index: 1;
     overflow: hidden;
     width: 100%;
     display: flex;
@@ -632,12 +632,11 @@ footer {
     .card {
         width: 100%;
         margin-bottom: 20px;
-        transform: translateX(-300px);
-}
+    }
 
-.card.active {
-    transform: translateX(0);
-  }
+    .textocard {
+        font-size: 1em;
+    }
     .conteudoprogramas {
         text-align: center;
     }
